@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欣嘉居家長照機構 | 居家服務員徵才 | 長照2.0服務 | 三民鼓山岡山居家照護</title>
+    <meta name="description" content="欣嘉居家長照機構提供專業居家照護服務，服務區域涵蓋三民、苓雅、鼓山、楠梓、岡山、橋頭、燕巢、大社、仁武、鳥松。薪資保底64拆，完善福利制度，歡迎居家服務員加入我們的團隊。">
+    <meta name="keywords" content="居家長照,居家照護,長照2.0,居家服務員,長照機構,三民長照,鼓山長照,岡山長照,楠梓長照,居家服務,長期照顧,欣嘉">
+    
+    <!-- Open Graph 社群分享優化 -->
+    <meta property="og:title" content="欣嘉居家長照機構 - 專業居家照護服務">
+    <meta property="og:description" content="提供優質居家長照服務，薪資保底64拆，完善福利制度，服務高雄多區域">
+    <meta property="og:type" content="website">
+    
+    <!-- 結構化資料 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "欣嘉居家長照機構",
+        "description": "專業居家照護服務機構",
+        "areaServed": ["三民", "苓雅", "鼓山", "楠梓", "岡山", "橋頭", "燕巢", "大社", "仁武", "鳥松"],
+        "serviceType": "居家長照服務"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft JhengHei', '微軟正黑體', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(-100px) translateY(-100px); }
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-button {
+            background: #00b894;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-button:hover {
+            background: #00a085;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        /* Main Content */
+        .main-content {
+            background: white;
+            margin: -50px auto 0;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 3;
+        }
+        
+        .section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            color: #2d3436;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #74b9ff;
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+        
+        /* Service Cards */
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-color: #74b9ff;
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #2d3436;
+            margin-bottom: 1rem;
+        }
+        
+        .service-list {
+            list-style: none;
+            text-align: left;
+        }
+        
+        .service-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .service-list li::before {
+            content: '✓';
+            color: #00b894;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Recruitment Section */
+        .recruitment-banner {
+            background: linear-gradient(135deg, #e17055 0%, #d63031 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .recruitment-banner::before {
+            content: '🔥';
+            position: absolute;
+            font-size: 10rem;
+            opacity: 0.1;
+            top: 50%;
+            right: -2rem;
+            transform: translateY(-50%);
+        }
+        
+        .recruitment-banner h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .recruitment-banner p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+        }
+        
+        .main-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .highlight-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-10px);
+            border-color: #74b9ff;
+            box-shadow: 0 15px 30px rgba(116,185,255,0.2);
+        }
+        
+        .highlight-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight-card h4 {
+            font-size: 1.4rem;
+            color: #2d3436;
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-card p {
+            color: #636e72;
+            font-size: 1.1rem;
+        }
+        
+        .salary-guarantee {
+            background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .salary-guarantee::before {
+            content: '💎';
+            position: absolute;
+            font-size: 12rem;
+            opacity: 0.1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .guarantee-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .guarantee-content h3 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .guarantee-details {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .guarantee-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .guarantee-text {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+        
+        .guarantee-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fdcb6e;
+        }
+        
+        .guarantee-highlight {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #FFD966;
+            animation: pulse 2s infinite;
+        }
+        
+        .guarantee-plus {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fdcb6e;
+        }
+        
+        .guarantee-note {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            opacity: 0.95;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .benefits-section {
+            margin: 3rem 0;
+        }
+        
+        .benefits-section h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: #2d3436;
+            margin-bottom: 2rem;
+        }
+        
+        .benefits-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .benefit-highlight {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 0.8rem;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-highlight:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(116,185,255,0.3);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+        }
+        
+        .benefit-text h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .benefit-text p {
+            opacity: 0.9;
+        }
+        
+        .work-environment {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 15px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .work-environment h3 {
+            font-size: 2rem;
+            color: #2d3436;
+            margin-bottom: 2rem;
+        }
+        
+        .environment-features {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+        }
+        
+        .feature-text {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2d3436;
+        }
+        
+        .join-requirements {
+            background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .join-requirements h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .requirements-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .requirement-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .req-icon {
+            font-size: 2.5rem;
+        }
+        
+        .req-text {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        
+        .requirement-plus {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .requirement-arrow {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .requirement-result {
+            background: rgba(255,255,255,0.2);
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .result-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .join-note {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-top: 1.5rem;
+        }
+        
+        .apply-section {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .apply-button {
+            background: linear-gradient(135deg, #e17055 0%, #d63031 100%);
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(225, 112, 85, 0.3);
+        }
+        
+        .apply-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(225, 112, 85, 0.4);
+            background: linear-gradient(135deg, #d63031 0%, #e17055 100%);
+        }
+
+        /* Salary Section (old styles commented out but kept for reference) */
+        /* .salary-highlight {
+            background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .salary-highlight::before {
+            content: '💰';
+            position: absolute;
+            font-size: 15rem;
+            opacity: 0.1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .salary-highlight h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .salary-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .salary-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .salary-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .salary-amount {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fdcb6e;
+        } */
+        
+        /* Payment Section */
+        .payment-info {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        
+        .payment-card {
+            background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,184,148,0.3);
+        }
+        
+        .payment-card h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .payment-rates {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .rate-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 120px;
+        }
+        
+        .rate-label {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+        
+        .rate-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fdcb6e;
+        }
+        
+        .service-table-container {
+            margin: 3rem 0;
+        }
+        
+        .service-categories {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .category-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            border-left: 5px solid #74b9ff;
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            color: #2d3436;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .service-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .service-item:hover {
+            border-color: #74b9ff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(116,185,255,0.2);
+        }
+        
+        .service-item.highlight {
+            border-left: 4px solid #e17055;
+            background: linear-gradient(135deg, #fff 0%, #ffeaa7 20%);
+        }
+        
+        .service-name {
+            font-weight: 500;
+            color: #2d3436;
+        }
+        
+        .service-price {
+            font-weight: bold;
+            color: #00b894;
+            font-size: 1.1rem;
+        }
+        
+        .service-item.highlight .service-price {
+            color: #e17055;
+        }
+        
+        .payment-note {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+        
+        .payment-note p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .payment-note p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Benefits */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .benefit-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #74b9ff;
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            background: #74b9ff;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        /* Service Areas */
+        .areas-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        
+        .area-tag {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .area-tag:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(116, 185, 255, 0.4);
+        }
+        
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .contact-icon {
+            font-size: 3rem;
+            color: #74b9ff;
+            margin-bottom: 1rem;
+        }
+        
+        .qr-placeholder {
+            width: 200px;
+            height: 200px;
+            background: #f1f2f6;
+            border: 2px dashed #74b9ff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            font-size: 1.1rem;
+            color: #74b9ff;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+            
+            .salary-highlight h3 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+        
+        /* SEO優化的隱藏文字 */
+        .seo-content {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        /* 為超連結添加互動效果 */
+        .contact-card a:hover {
+            color: 
+        #0984e3 !important;
+            text-decoration: underline !important;
+            transform: scale(1.02);
+        }
+        .contact-card a:active {
+            color: 
+        #2d3436 !important;
+        }
+        /* 為電話和地址連結添加特殊效果 */
+        .contact-card a[href^="tel:"]:hover {
+            background: rgba(116, 185, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .contact-card a[href^="mailto:"]:hover {
+            background: rgba(116, 185, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .contact-card a[href^="https://maps"]:hover {
+            background: rgba(116, 185, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- SEO優化隱藏內容 -->
+    <div class="seo-content">
+        <h1>高雄居家長照服務 欣嘉居家長照機構</h1>
+        <p>提供三民區、鼓山區、楠梓區、岡山區、橋頭區、燕巢區、大社區、仁武區、鳥松區專業居家照護服務，長照2.0給付，居家服務員薪資優渥，福利完善</p>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <h1>🏠 欣嘉居家長照機構</h1>
+            <p>專業居家照護服務 ｜ 溫暖如家的照顧品質</p>
+            <a href="#contact" class="cta-button">立即聯絡我們</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- 服務介紹 -->
+            <section class="section" id="services">
+                <h2>🌟 居家服務項目</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-icon">👩‍⚕️</div>
+                        <h3>身體照顧服務</h3>
+                        <ul class="service-list">
+                            <li>協助如廁、洗澡、進食</li>
+                            <li>翻身拍背、肢體關節活動</li>
+                            <li>協助服藥及生活照顧</li>
+                            <li>陪同外出及就醫</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏡</div>
+                        <h3>家務及日常生活照顧</h3>
+                        <ul class="service-list">
+                            <li>餐食料理及營養調配</li>
+                            <li>居家環境清潔整理</li>
+                            <li>衣物清洗及整理</li>
+                            <li>生活起居協助</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">❤️</div>
+                        <h3>安全看視及社會參與</h3>
+                        <ul class="service-list">
+                            <li>安全看視及陪伴服務</li>
+                            <li>情緒支持及心理關懷</li>
+                            <li>協助社交活動參與</li>
+                            <li>家屬溝通及諮詢</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 給付方式 -->
+            <section class="section" id="payment">
+                <h2>💳 長照2.0居家服務給付標準</h2>
+                
+                <!-- 自負額說明 -->
+                <div class="payment-info">
+                    <div class="payment-card">
+                        <h3>🏠 自負額比例</h3>
+                        <div class="payment-rates">
+                            <div class="rate-item">
+                                <span class="rate-label">一般戶</span>
+                                <span class="rate-value">16%</span>
+                            </div>
+                            <div class="rate-item">
+                                <span class="rate-label">中低收入戶</span>
+                                <span class="rate-value">5%</span>
+                            </div>
+                            <div class="rate-item">
+                                <span class="rate-label">低收入戶</span>
+                                <span class="rate-value">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 服務項目表格 -->
+                <div class="service-table-container">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: #2d3436;">服務項目及費用標準</h3>
+                    <div class="service-categories">
+                        
+                        <!-- 身體照顧服務 -->
+                        <div class="category-section">
+                            <h4 class="category-title">👩‍⚕️ 身體照顧服務</h4>
+                            <div class="service-items">
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA01基本身體清潔</span>
+                                    <span class="service-price">$260</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA02基本日常照顧</span>
+                                    <span class="service-price">$195</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA03測量生命徵象</span>
+                                    <span class="service-price">$35</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA04協助進食或管灌餵食</span>
+                                    <span class="service-price">$130</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA07協助沐浴及洗頭</span>
+                                    <span class="service-price">$325</span>
+                                </div>
+                                <div class="service-item">
+                                    <span class="service-name">BA24協助排泄</span>
+                                    <span class="service-price">$220</span>
+                                </div>
+                                <div class="service-item">
+                                    <span class="service-name">BA10翻身拍背</span>
+                                    <span class="service-price">$155</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA11肢體關節活動</span>
+                                    <span class="service-price">$195</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 專業護理服務 -->
+                        <div class="category-section">
+                            <h4 class="category-title">🏥 專業護理服務</h4>
+                            <div class="service-items">
+                                <div class="service-item">
+                                    <span class="service-name">BA17a人工氣道管內分泌物抽吸</span>
+                                    <span class="service-price">$75</span>
+                                </div>
+                                <div class="service-item">
+                                    <span class="service-name">BA17b口腔內分泌物抽吸</span>
+                                    <span class="service-price">$65</span>
+                                </div>
+                                <div class="service-item">
+                                    <span class="service-name">BA17c尿管及鼻胃管清潔與固定</span>
+                                    <span class="service-price">$50</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA17d1血糖機驗血糖</span>
+                                    <span class="service-price">$50</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA17d2甘油球通便</span>
+                                    <span class="service-price">$50</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA17e依指示置入藥盒</span>
+                                    <span class="service-price">$50</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 日常生活服務 -->
+                        <div class="category-section">
+                            <h4 class="category-title">🏡 日常生活服務</h4>
+                            <div class="service-items">
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA05餐食照顧</span>
+                                    <span class="service-price">$310</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA15家務協助</span>
+                                    <span class="service-price">$195</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA16代購或代領或代送服務</span>
+                                    <span class="service-price">$130</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA12協助(上下)樓梯</span>
+                                    <span class="service-price">$130</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 外出及陪伴服務 -->
+                        <div class="category-section">
+                            <h4 class="category-title">🚗 外出及陪伴服務</h4>
+                            <div class="service-items">
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA14陪同就醫</span>
+                                    <span class="service-price">$685</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA13陪同外出</span>
+                                    <span class="service-price">$195</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA18安全看視</span>
+                                    <span class="service-price">$200</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA20陪伴服務</span>
+                                    <span class="service-price">$175</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA22巡視服務</span>
+                                    <span class="service-price">$130</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 特殊服務 -->
+                        <div class="category-section">
+                            <h4 class="category-title">✨ 特殊服務</h4>
+                            <div class="service-items">
+                                <div class="service-item">
+                                    <span class="service-name">BA09到宅沐浴車服務--第1型</span>
+                                    <span class="service-price">$2,200</span>
+                                </div>
+                                <div class="service-item">
+                                    <span class="service-name">BA09a到宅沐浴車服務--第2型</span>
+                                    <span class="service-price">$2,500</span>
+                                </div>
+                                <div class="service-item">
+                                    <span class="service-name">BA08足部照護</span>
+                                    <span class="service-price">$500</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">BA23協助洗頭</span>
+                                    <span class="service-price">$200</span>
+                                </div>
+                                <div class="service-item highlight">
+                                    <span class="service-name">GA09居家喘息服務-2小時</span>
+                                    <span class="service-price">$770</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-note">
+                    <p>💰 <strong>費用說明：</strong>以上為政府補助標準價格，實際自負金額會依照家庭經濟狀況調整</p>
+                    <p>📋 <strong>服務提醒：</strong>所有服務均需經過長照需求評估，由照管專員安排服務內容</p>
+                </div>
+            </section>
+
+            <!-- 薪資福利 -->
+            <section class="section" id="salary">
+                <h2>🔥 居家服務員招募中</h2>
+                
+                <!-- 招募標語 -->
+                <div class="recruitment-banner">
+                    <h3>【高雄在地｜居服人員招募】保底收入穩</h3>
+                    <p>【高薪又穩定】照顧工作也能有保障！</p>
+                </div>
+
+                <!-- 主要賣點 -->
+                <div class="main-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">📍</div>
+                        <h4>高雄地區招募中</h4>
+                        <p>居家照顧人員</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">⏰</div>
+                        <h4>彈性工時</h4>
+                        <p>可兼職、可轉正</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">💰</div>
+                        <h4>優渥時薪</h4>
+                        <p>$220 ~ $333</p>
+                    </div>
+                </div>
+
+                <!-- 保底收入重點 -->
+                <div class="salary-guarantee">
+                    <div class="guarantee-content">
+                        <h3>💎 月薪以時薪計算保底 64拆</h3>
+                        <div class="guarantee-details">
+                            <div class="guarantee-item">
+                                <span class="guarantee-text">至少保障</span>
+                                <span class="guarantee-number">60%</span>
+                            </div>
+                            <div class="guarantee-plus">+</div>
+                            <div class="guarantee-item">
+                                <span class="guarantee-text">超過60%也絕對</span>
+                                <span class="guarantee-highlight">不倒扣！</span>
+                            </div>
+                        </div>
+                        <p class="guarantee-note">讓您的收入更有保障，工作更安心！</p>
+                    </div>
+                </div>
+
+                <!-- 完整福利 -->
+                <div class="benefits-section">
+                    <h3>🎁 完整福利待遇</h3>
+                    <div class="benefits-showcase">
+                        <div class="benefit-highlight">
+                            <div class="benefit-icon">🎄</div>
+                            <div class="benefit-text">
+                                <h4>三節獎金</h4>
+                                <p>端午、中秋、春節</p>
+                            </div>
+                        </div>
+                        <div class="benefit-highlight">
+                            <div class="benefit-icon">📚</div>
+                            <div class="benefit-text">
+                                <h4>免費訓練</h4>
+                                <p>專業技能提升</p>
+                            </div>
+                        </div>
+                        <div class="benefit-highlight">
+                            <div class="benefit-icon">📜</div>
+                            <div class="benefit-text">
+                                <h4>證照輔導</h4>
+                                <p>考照費用補助</p>
+                            </div>
+                        </div>
+                        <div class="benefit-highlight">
+                            <div class="benefit-icon">🚗</div>
+                            <div class="benefit-text">
+                                <h4>轉場費</h4>
+                                <p>Google Map計算時間</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 工作環境優勢 -->
+                <div class="work-environment">
+                    <h3>🏠 工作環境優勢</h3>
+                    <div class="environment-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">📍</span>
+                            <span class="feature-text">區域近</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">❤️</span>
+                            <span class="feature-text">溫暖團隊</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">👥</span>
+                            <span class="feature-text">不怕沒人教</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 招募門檻 -->
+                <div class="join-requirements">
+                    <h3>✅ 加入條件</h3>
+                    <div class="requirements-content">
+                        <div class="requirement-item">
+                            <span class="req-icon">💖</span>
+                            <span class="req-text">有心</span>
+                        </div>
+                        <div class="requirement-plus">+</div>
+                        <div class="requirement-item">
+                            <span class="req-icon">🤗</span>
+                            <span class="req-text">有愛</span>
+                        </div>
+                        <div class="requirement-arrow">→</div>
+                        <div class="requirement-result">
+                            <span class="result-text">就能開始！</span>
+                        </div>
+                    </div>
+                    <p class="join-note">我們歡迎有熱忱的您加入我們的專業團隊</p>
+                </div>
+
+                <!-- 立即應徵按鈕 -->
+                <div class="apply-section">
+                    <a href="#contact" class="apply-button">
+                        🚀 立即應徵 | 開始您的照護職涯
+                    </a>
+                </div>
+            </section>
+
+            <!-- 服務區域 -->
+            <section class="section" id="areas">
+                <h2>🗺️ 服務區域</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+                    我們的專業團隊服務高雄市多個行政區域
+                </p>
+                <div class="areas-container">
+                    <div class="area-tag">三民區</div>
+                    <div class="area-tag">苓雅區</div>
+                    <div class="area-tag">鼓山區</div>
+                    <div class="area-tag">楠梓區</div>
+                    <div class="area-tag">岡山區</div>
+                    <div class="area-tag">橋頭區</div>
+                    <div class="area-tag">燕巢區</div>
+                    <div class="area-tag">大社區</div>
+                    <div class="area-tag">仁武區</div>
+                    <div class="area-tag">鳥松區</div>
+                </div>
+            </section>
+
+            <!-- 聯絡資訊 -->
+            <section class="section" id="contact">
+                <h2>📞 聯絡我們</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>服務專線 
+                            <a href="tel:07-3529926" style="color: #74b9ff; text-decoration: none;">
+                                07-3529926
+                            </a>
+                        </h3>
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #74b9ff;">
+                            <a href="tel:07-3529926" style="color: #74b9ff; text-decoration: none; transition: color 0.3s ease;">
+                                請來電洽詢
+                            </a>
+                        </p>
+                        <p>服務時間：週一至週五 9:00-18:00</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>電子信箱</h3>
+                        <p style="font-size: 1.2rem; font-weight: bold; color: #74b9ff;">
+                            <a href="mailto:hc94645102@gmail.com" style="color: #74b9ff; text-decoration: none; transition: color 0.3s ease;">
+                                hc94645102@gmail.com
+                            </a>
+                        </p>
+                        <p>我們將盡快回覆您的詢問</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>機構地址</h3>
+                        <p style="font-size: 1.2rem; font-weight: bold; color: #74b9ff;">
+                            <a href="https://maps.google.com/maps?q=高雄市楠梓區楠梓路269巷18號1樓" target="_blank" style="color: #74b9ff; text-decoration: none; transition: color 0.3s ease;">
+                                高雄市楠梓區楠梓路269巷18號1樓
+                            </a>
+                        </p>
+                        <p>歡迎預約諮詢</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>官方LINE</h3>
+                        <div class="qr-placeholder">
+                            請放置您的<br>LINE QR Code
+                        </div>
+                        <p>掃描QR Code加入官方LINE</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 欣嘉居家長照機構. 版權所有 | 專業居家照護服務 | 長照2.0核准機構</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                服務區域：三民、鼓山、鼓山、楠梓、岡山、橋頭、燕巢、大社、仁武、鳥松
+            </p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                機構地址：高雄市楠梓區楠梓路269巷18號1樓
+                機構電話：07-3529926
+            </p>
+        </div>
+    </footer>
+
+    <!-- Google Analytics 建議加入 -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+</body>
+</html>
